@@ -1,2 +1,2 @@
-# te-project-
+# te-project
 TrustEdge Infotech Laravel project repository
