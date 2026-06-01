@@ -1,0 +1,5 @@
+@extends('layouts.app')
+@section('title', 'Login')
+@section('content')
+<section class="section-pad"><div class="container"><div class="row justify-content-center"><div class="col-md-7 col-lg-5"><form class="trust-card p-4" method="post" action="{{ route('login') }}">@csrf<h1 class="fw-bold text-trust">Login</h1><p class="text-secondary">Access your TrustEdge workspace.</p><label class="form-label">Email</label><input type="email" name="email" class="form-control mb-3" required autofocus><label class="form-label">Password</label><input type="password" name="password" class="form-control mb-3" required><div class="d-flex justify-content-between mb-3"><label><input type="checkbox" name="remember"> Remember me</label><a href="{{ route('password.request') }}">Forgot password?</a></div><button class="btn btn-primary rounded-pill px-4 w-100">Login</button><p class="mt-3 mb-0 text-center">New here? <a href="{{ route('register') }}">Create account</a></p></form></div></div></div></section>
+@endsection
